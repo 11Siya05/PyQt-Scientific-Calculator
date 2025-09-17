@@ -1,32 +1,35 @@
-Scientific Calculator
+🧮 Scientific Calculator
 
-A fully-featured scientific calculator built with Python and PyQt5. It supports standard arithmetic operations, advanced scientific functions, memory operations, and a visually appealing modern interface.
+A fully-featured scientific calculator built with Python and PyQt5. It supports standard arithmetic operations, advanced scientific functions, memory operations, and a sleek modern interface. Perfect for daily calculations or learning scientific math functions.
 
-Features
+✨ Features
 
 Standard arithmetic: +, -, *, /
 
 Scientific functions: sin, cos, tan, log, ln, √, x², xʸ, 1/x, factorial (!)
 
-Constants: π and e
+Mathematical constants: π and e
 
-Memory operations: MC, MR, M+, M-, MS
+Memory functions: MC, MR, M+, M-, MS
 
-Clear and backspace functionality: C, CE, ⌫
+Entry management: C (clear all), CE (clear entry), ⌫ (backspace), ± (change sign)
 
-Sign change: ±
-
-Parentheses for grouping
+Parentheses support for grouping
 
 Expression display for real-time feedback
 
-Error handling (division by zero, invalid inputs)
-
 Keyboard input support
 
-Dark-themed modern GUI
+Error handling (division by zero, invalid inputs)
 
-Installation
+Dark modern GUI with hover and press effects
+
+🖥️ Screenshot
+
+
+A sleek, modern calculator interface built with PyQt5.
+
+🚀 Installation
 
 Clone the repository:
 
@@ -44,24 +47,33 @@ Install dependencies:
 
 pip install PyQt5
 
-Usage
+🎮 Usage
 
-Run the application:
+Run the calculator:
 
 python main.py
 
 
-Once launched, use the buttons or your keyboard to perform calculations.
+Use the buttons or your keyboard to perform calculations.
 
-Usage Examples
+Examples:
 
-Calculate sin(30) → press sin then 3 0 =
+sin(30) → press 3, 0, then sin, then =
 
-Calculate 5^3 → press 5 xʸ 3 =
+5^3 → press 5, xʸ, 3, =
 
-Use memory: MS to store, MR to recall, M+ and M- to modify memory
+Store in memory → press MS
 
-Screenshots
+Recall memory → press MR
 
+💡 How It Works
 
-Add a screenshot of your app here to make it visually appealing.
+Display management: Shows current input and full expression
+
+Operations: Handles basic arithmetic, repeated = calculations, and error handling
+
+Scientific functions: Uses Python math module with input validation
+
+Memory: Stores a single numeric value with M+, M-, MS, MR, MC
+
+UI: Built with PyQt5, uses QGridLayout for buttons and QLineEdit for display
