@@ -24,7 +24,8 @@ Error handling (division by zero, invalid inputs)
 
 Dark modern GUI with hover and press effects
 
-🖥️ Screenshot
+<img width="227" height="369" alt="image" src="https://github.com/user-attachments/assets/4d30e4f6-98a9-4d8e-9acd-7318203292fc" />
+
 
 
 A sleek, modern calculator interface built with PyQt5.
@@ -33,8 +34,8 @@ A sleek, modern calculator interface built with PyQt5.
 
 Clone the repository:
 
-git clone https://github.com/your-username/scientific-calculator.git
-cd scientific-calculator
+git clone https://github.com/11Siya05/PyQt-Scientific-Calculator
+cd PyQt-Scientific-Calculator
 
 
 Create a virtual environment (optional but recommended):
