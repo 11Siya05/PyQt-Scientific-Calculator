@@ -1,80 +1,96 @@
-🧮 Scientific Calculator
+# 🧮 Scientific Calculator
 
-A fully-featured scientific calculator built with Python and PyQt5. It supports standard arithmetic operations, advanced scientific functions, memory operations, and a sleek modern interface. Perfect for daily calculations or learning scientific math functions.
+[![Python Version](https://img.shields.io/badge/python-3.x-blue.svg)](https://python.org)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-✨ Features
+A fully-featured scientific calculator built with Python and PyQt5. It supports standard arithmetic operations, advanced scientific functions, memory operations, and a sleek modern interface.
 
-Standard arithmetic: +, -, *, /
+## Table of Contents
 
-Scientific functions: sin, cos, tan, log, ln, √, x², xʸ, 1/x, factorial (!)
+- [Features](#-features)
+- [Screenshot](#-screenshot)
+- [Installation](#-installation)
+- [Usage](#-usage)
+- [How It Works](#-how-it-works)
+- [Contributing](#-contributing)
+- [License](#-license)
 
-Mathematical constants: π and e
+## ✨ Features
 
-Memory functions: MC, MR, M+, M-, MS
+- **Standard Arithmetic:** `+`, `-`, `*`, `/`
+- **Scientific Functions:** `sin`, `cos`, `tan`, `log`, `ln`, `√`, `x²`, `xʸ`, `1/x`, `!` (factorial)
+- **Mathematical Constants:** `π` and `e`
+- **Memory Functions:** `MC`, `MR`, `M+`, `M-`, `MS`
+- **Entry Management:** `C` (clear all), `CE` (clear entry), `⌫` (backspace), `±` (change sign)
+- **Parentheses Support:** For grouping expressions.
+- **Real-time Feedback:** An expression display that shows the ongoing calculation.
+- **Keyboard Input:** Supports keyboard input for most operations.
+- **Error Handling:** Gracefully handles errors like division by zero and invalid input.
+- **Modern UI:** A dark, modern GUI with hover and press effects for a better user experience.
 
-Entry management: C (clear all), CE (clear entry), ⌫ (backspace), ± (change sign)
+## 📸 Screenshot
 
-Parentheses support for grouping
+<img width="227" height="369" alt="Calculator Screenshot" src="https://github.com/user-attachments/assets/4d30e4f6-98a9-4d8e-9acd-7318203292fc" />
 
-Expression display for real-time feedback
+## 🚀 Installation
 
-Keyboard input support
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/11Siya05/PyQt-Scientific-Calculator
+    cd PyQt-Scientific-Calculator
+    ```
 
-Error handling (division by zero, invalid inputs)
+2.  **Create and activate a virtual environment (recommended):**
+    ```bash
+    # For Windows
+    python -m venv venv
+    venv\Scripts\activate
 
-Dark modern GUI with hover and press effects
+    # For macOS/Linux
+    python3 -m venv venv
+    source venv/bin/activate
+    ```
 
-<img width="227" height="369" alt="image" src="https://github.com/user-attachments/assets/4d30e4f6-98a9-4d8e-9acd-7318203292fc" />
+3.  **Install the dependencies:**
+    ```bash
+    pip install PyQt5
+    ```
 
+## 🎮 Usage
 
+Run the calculator from the command line:
 
-A sleek, modern calculator interface built with PyQt5.
-
-🚀 Installation
-
-Clone the repository:
-
-git clone https://github.com/11Siya05/PyQt-Scientific-Calculator
-cd PyQt-Scientific-Calculator
-
-
-Create a virtual environment (optional but recommended):
-
-python -m venv venv
-source venv/bin/activate   # Windows: venv\Scripts\activate
-
-
-Install dependencies:
-
-pip install PyQt5
-
-🎮 Usage
-
-Run the calculator:
-
+```bash
 python main.py
+```
 
+Use the on-screen buttons or your keyboard to perform calculations.
 
-Use the buttons or your keyboard to perform calculations.
+**Examples:**
+- **sin(30):** Press `3`, `0`, then `sin`.
+- **5³:** Press `5`, `xʸ`, `3`, then `=`.
+- **Store a number:** Enter a number and press `MS`.
+- **Recall a number:** Press `MR`.
 
-Examples:
+## 💡 How It Works
 
-sin(30) → press 3, 0, then sin, then =
+- **Display Management:** The calculator uses two `QLineEdit` widgets to show the current input and the full expression.
+- **Operations:** It handles basic arithmetic, repeated `=` calculations, and provides clear error messages.
+- **Scientific Functions:** The `math` module from Python's standard library is used for scientific calculations, with input validation to prevent errors.
+- **Memory:** A single numeric value can be stored, recalled, and modified using the memory functions.
+- **UI:** The user interface is built with PyQt5, using a `QGridLayout` for the buttons and a `QVBoxLayout` for the main window layout. Styling is done with QSS (Qt Style Sheets).
 
-5^3 → press 5, xʸ, 3, =
+## 🤝 Contributing
 
-Store in memory → press MS
+Contributions are welcome! If you have ideas for new features or improvements, feel free to open an issue or submit a pull request.
 
-Recall memory → press MR
+1.  **Fork the repository.**
+2.  **Create a new branch:** `git checkout -b feature/YourFeatureName`
+3.  **Make your changes.**
+4.  **Commit your changes:** `git commit -m 'Add some feature'`
+5.  **Push to the branch:** `git push origin feature/YourFeatureName`
+6.  **Open a pull request.**
 
-💡 How It Works
+## 📝 License
 
-Display management: Shows current input and full expression
-
-Operations: Handles basic arithmetic, repeated = calculations, and error handling
-
-Scientific functions: Uses Python math module with input validation
-
-Memory: Stores a single numeric value with M+, M-, MS, MR, MC
-
-UI: Built with PyQt5, uses QGridLayout for buttons and QLineEdit for display
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
