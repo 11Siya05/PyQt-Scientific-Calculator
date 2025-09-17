@@ -80,17 +80,4 @@ Use the on-screen buttons or your keyboard to perform calculations.
 - **Memory:** A single numeric value can be stored, recalled, and modified using the memory functions.
 - **UI:** The user interface is built with PyQt5, using a `QGridLayout` for the buttons and a `QVBoxLayout` for the main window layout. Styling is done with QSS (Qt Style Sheets).
 
-## 🤝 Contributing
 
-Contributions are welcome! If you have ideas for new features or improvements, feel free to open an issue or submit a pull request.
-
-1.  **Fork the repository.**
-2.  **Create a new branch:** `git checkout -b feature/YourFeatureName`
-3.  **Make your changes.**
-4.  **Commit your changes:** `git commit -m 'Add some feature'`
-5.  **Push to the branch:** `git push origin feature/YourFeatureName`
-6.  **Open a pull request.**
-
-## 📝 License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
